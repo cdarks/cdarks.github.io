@@ -1,306 +1,237 @@
-<!DOCTYPE html>
-<html lang="cn">
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Cache-Control" content="no-siteapp">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    
-    <meta name="renderer" content="webkit"/>
-    <meta name="force-rendering" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
-    
-    
-        <link rel="shortcut icon" href="/images/favicon.ico">
-    
-     
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.2.30/dist/vuetify.min.css" rel="stylesheet">
-    
-<link rel="stylesheet" href="/css/main.css">
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=https://cdarks.github.io/warn.html">
+<![endif]-->
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta name="author" content="Tony Yuan">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="mobile-agent" content="format=html5; url=https://cdarks.github.io">
+<meta http-equiv="X-DNS-Prefetch-Control" content="on">
 
-    
-    
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 
+<link rel="shortcut icon" href="/images/favicon.png">
 
 
+<title>归档 - Coding&#39;s NoteBook</title>
 
+<meta name="keywords" content="">
 
+<meta name="description " content="">
 
-    
-    
-          
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="归档 - Coding&#39;s NoteBook" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="https://cdarks.github.io" />
+<meta property="og:site_name" content="Coding&#39;s NoteBook" />
 
+<link rel="dns-prefetch" href="https://cdarks.github.io">
+<link rel="prefetch" href="https://cdarks.github.io">
+<link rel="prerender" href="https://cdarks.github.io">
+<link rel="stylesheet" href="/css/JSimple.min.css">
+    <script type="text/javascript">
+        (function() {
+            let jsi_config = {
+                rootUrl: 'https://cdarks.github.io/',
+                isPost: 'false',
+                buildingTime: '01/26/2021',
+                snsQRCode: '/images/sns-qrcode.png',
+                donateImg: '/images/donate-qr.png',
+                localSearch: { dbPath: '' },
+                readMode: 'day'
+            };
+            
+            window.jsi_config = jsi_config;
+        })()
+    </script>
     
-    
-    
-    
-    <title>
-          
-            Coding&#39;s NoteBook
-        
-    </title>
-    
-    
+<script src="/js/SimpleCore.min.js"></script>
+
 <meta name="generator" content="Hexo 5.3.0"></head>
 <body>
-    <div id="app">
-        <v-app>
-            <v-content id="page">
-                <v-container fluid>
-                    <v-row>
-                        <v-col cols="2" class="d-none d-md-block">
-                            <div id="sidebar" class="float-right">
-    <a href="/" rel="home">
-        <v-avatar size=96>
-            <img id="logo" src="https://raw.githubusercontent.com/cdarks/picimages/master/imageslogo.png">     
-        </v-avatar> 
-    </a>
-    <v-divider></v-divider>
-    <div class="mini-menu">
-        <v-btn icon href="/">
-            <v-icon>home</v-icon>
-        </v-btn>
-        <v-btn icon href="/categories/">
-            <v-icon>folder</v-icon>
-        </v-btn>
-        <v-btn icon href="/tags/">
-            <v-icon>bookmark</v-icon>
-        </v-btn>
-        <v-btn icon @click="SetNightMode">
-            <v-icon>{{ nightMode }}</v-icon>
-        </v-btn>
-    </div>
-    <v-list id="main-menu" class="font-weight-bold" flat>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="NoteBook">NoteBook</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <!-- custom single page of menus -->
         
-            
-            <v-list-item href="/archives/" link>
-            <v-list-item-icon><v-icon>archive</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                Archives
-            </v-list-item-content>
-            </v-list-item>
         
-            
-            <v-list-item href="/about/" link>
-            <v-list-item-icon><v-icon>account_circle</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                About
-            </v-list-item-content>
-            </v-list-item>
+        <a href="/help" title="帮助">
+            <i class="fa fa-question-circle"></i>
+            <span>帮助</span>
+        </a>
         
-            
-            <v-list-item href="https://garybear.cn/" link>
-            <v-list-item-icon><v-icon>rss_feed</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                我的博客
-            </v-list-item-content>
-            </v-list-item>
-        
-            
-            <v-list-item href="https://garybear.cn/hexo-theme-insulin/doc/#/" link>
-            <v-list-item-icon><v-icon>insert_drive_file</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                说明文档
-            </v-list-item-content>
-            </v-list-item>
-        
-    </v-list>
-    <v-divider></v-divider>
-    
-        <v-list id="sub-menu" class="font-weight-medium" dense>
-            
-                
-                    <v-list-item href="/categories/PHP/" link>
-                        <v-badge :value="menuHover" transition="slide-y-transition" inline content="1" >
-                            <v-hover v-model="menuHover">
-                                <v-list-item-content>
-                                    <span>PHP</span>                              
-                                </v-list-item-content>                           
-                            </v-hover>
-                        </v-badge>
-                    </v-list-item>
-                
-            
-        </v-list>    
-    
+    </nav>
+</div>
 
-    <div id="footer">
-        <div class="footer-social">
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-sns-qr" href="javascript:"><i class="fa fa-weixin"></i></a>
+</div>
+
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <img class="cover-img" src="https://shuoit.net/images/cover-day.jpg" alt="cover-img" loading="lazy" />
+    <div class="cover-info">
+        
+        <h1 class="cover-siteName">Coding&#39;s NoteBook</h1>
+        <h3 class="cover-siteTitle">一直Coding一直爽</h3>
+        <p class="cover-siteDesc">一个个人笔记</p>
+        <div class="cover-sns">
             
-                
-                <v-btn icon href="mailto:kb1000fx@gmail.com" target="_blank">
-                    <v-icon>fas fa-envelope</v-icon>
-                </v-btn>
-            
-                
-                <v-btn icon href="https://github.com/kb1000fx" target="_blank">
-                    <v-icon>fab fa-github</v-icon>
-                </v-btn>
-            
-                
-                <v-btn icon href="https://steamcommunity.com/profiles/76561198346798163" target="_blank">
-                    <v-icon>fab fa-steam</v-icon>
-                </v-btn>
-            
-                
-                <v-btn icon href="https://weibo.com/kb1000fx" target="_blank">
-                    <v-icon>fab fa-weibo</v-icon>
-                </v-btn>
-            
-        </div>
-        <v-divider></v-divider>
-        <div class="footer-content">
-            
-                <span id="busuanzi_container_site_uv" style="display: none;"> 
-                    Total Visitors <span id="busuanzi_value_site_uv"></span>
-                </span>
-                <br>
-            
-            <span>Theme: <a target="_blank" rel="noopener" href="https://github.com/kb1000fx/hexo-theme-insulin">Insulin</a></span><br>
-            <span>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></span><br>
-            <span>
-                &copy; 2020 - 2021 
-                Tony Yuan
-            </span>
+    &nbsp;&nbsp;<div class="btn btn-github">
+        <a href="https://github.com/cdarks" target="_blank" title="github" ref="friend">
+            <i class="fa fa-github"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-twitter">
+        <a href="" target="_blank" title="twitter" ref="friend">
+            <i class="fa fa-twitter"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-instagram">
+        <a href="" target="_blank" title="instagram" ref="friend">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </div>
+
+
         </div>
     </div>
 </div>
 
-                        </v-col>
-                        <v-col cols="12" md="10">
-                            <v-row>
-  <v-col cols="12" md="8" align-self="end">
-    <div id="site-header">
-      <div id="site-title">
-        <a href="/" rel="home">Coding&#39;s NoteBook</a>
-      </div>
-      <div id="site-description"></div>
-      <div id="mobile-menu" class="d-block d-md-none">
-        <v-text-field label="请输入关键字" data-src="search.xml" v-model="searchHeaderValue" prepend-inner-icon="search" clearable clear-icon="clear" @keydown.enter="EnterSearch(searchHeaderValue,false)"></v-text-field>
-        <div class="mobile-mini-menu">
-          <v-btn icon href="/">
-              <v-icon>home</v-icon>
-          </v-btn>
-          <v-btn icon href="/categories/">
-              <v-icon>folder</v-icon>
-          </v-btn>
-          <v-btn icon href="/tags/">
-              <v-icon>bookmark</v-icon>
-          </v-btn>
-          <v-btn icon @click="SetNightMode">
-              <v-icon>{{ nightMode }}</v-icon>
-          </v-btn>
-          
-            
-            <v-btn icon href="/archives/">
-              <v-icon>archive</v-icon>
-            </v-btn>
-          
-            
-            <v-btn icon href="/about/">
-              <v-icon>account_circle</v-icon>
-            </v-btn>
-          
-            
-            <v-btn icon href="https://garybear.cn/">
-              <v-icon>rss_feed</v-icon>
-            </v-btn>
-          
-            
-            <v-btn icon href="https://garybear.cn/hexo-theme-insulin/doc/#/">
-              <v-icon>insert_drive_file</v-icon>
-            </v-btn>
-          
+            <div class="page-title">
+    <ul>
+        <li><a href="/" data-name="首页" title="Back Home">首页</a></li>
+        <li><a href="/tags" data-name="标签云" title="标签云">标签</a></li>
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <input type="text"
+               readonly="readonly"
+               id="local-search-input-tip"
+               placeholder="读物检索~" />
+        <button type="button" disabled="disabled" class="search-form-submit"><i class="fa fa-search"></i></button>
+    </form>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <h3 class="post-title">很好，目前已有3篇文章，继续努力(ง •_•)ง</h3>
         </div>
-      </div>    
-    </div>
-  </v-col>  
-  <v-col cols="4" align-self="end" class="d-none d-md-block">
-    <v-col align-self="end">
-      <v-text-field label="请输入关键字" data-src="search.xml" v-model="searchHeaderValue" prepend-icon="search" clearable clear-icon="clear" @keydown.enter="EnterSearch(searchHeaderValue,false)"></v-text-field>
-    </v-col> 
-  </v-col>
-</v-row>
-
-                            
-<v-card class="elevation-2 index-card">
-    <v-timeline class="timeline" dense>
         
-            
-            
-                <v-timeline-item class="timeline-header" color="secondary lighten-2">
-                    <a href="/archives/2021" class="timeline-title">2021</a>
-                    <span class="timeline-subtitle">Archives</span>
-                </v-timeline-item>
+        <div class="post-content markdown-body" itemprop="articleBody">
+            <div class="archives">
                 
-            
-            <v-timeline-item fill-dot small color="secondary lighten-2">
-                <div class="timeline-item-post d-none d-md-block">
-                    <span class="timeline-item-time">2021.01.26</span>
-                    <a href="/2021/01/26/ThinkPHP-6-%E5%A4%9A%E5%BA%94%E7%94%A8%E5%A4%9A%E5%85%A5%E5%8F%A3%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%94%9F%E6%88%90URL%E4%BD%BF%E7%94%A8-root-%E6%96%B9%E6%B3%95%E6%8C%87%E5%AE%9A%E5%85%A5%E5%8F%A3%E5%87%BA%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/" class="timeline-item-title">ThinkPHP 6 多应用多入口模式下生成URL使用-&gt;root()方法指定入口出错的问题</a>
+                
+                
+                
+                
+                <div class="archives-item">
+                    <h2>2021年01月</h2>
+                    <ul class="archives_list">
+                        
+                        <li>26日11:45:56
+                            <a href="/2021/01/26/FQ%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">FQ软件使用教程</a>
+                            
+                        </li>
+                        
+                
+                
+                
+                        <li>26日10:19:04
+                            <a href="/2021/01/26/ThinkPHP-6-%E5%A4%9A%E5%BA%94%E7%94%A8%E5%A4%9A%E5%85%A5%E5%8F%A3%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%94%9F%E6%88%90URL%E4%BD%BF%E7%94%A8-root-%E6%96%B9%E6%B3%95%E6%8C%87%E5%AE%9A%E5%85%A5%E5%8F%A3%E5%87%BA%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/">ThinkPHP 6 多应用多入口模式下生成URL使用-&gt;root()方法指定入口出错的问题</a>
+                            
+                        </li>
+                        
+                
+                
+                
+                        <li>26日09:28:17
+                            <a href="/2021/01/26/hello-world/">Hello World</a>
+                            
+                        </li>
+                        
+                    </ul>
                 </div>
-                <div class="timeline-item-post-mobile d-block d-md-none">
-                    <span class="timeline-item-time">2021.01.26</span><br>
-                    <a href="/2021/01/26/ThinkPHP-6-%E5%A4%9A%E5%BA%94%E7%94%A8%E5%A4%9A%E5%85%A5%E5%8F%A3%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%94%9F%E6%88%90URL%E4%BD%BF%E7%94%A8-root-%E6%96%B9%E6%B3%95%E6%8C%87%E5%AE%9A%E5%85%A5%E5%8F%A3%E5%87%BA%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/" class="timeline-item-title">ThinkPHP 6 多应用多入口模式下生成URL使用-&gt;root()方法指定入口出错的问题</a>
-                </div>
-                <v-divider></v-divider>
-            </v-timeline-item>
-        
-            
-            
-            <v-timeline-item fill-dot small color="secondary lighten-2">
-                <div class="timeline-item-post d-none d-md-block">
-                    <span class="timeline-item-time">2021.01.26</span>
-                    <a href="/2021/01/26/hello-world/" class="timeline-item-title">Hello World</a>
-                </div>
-                <div class="timeline-item-post-mobile d-block d-md-none">
-                    <span class="timeline-item-time">2021.01.26</span><br>
-                    <a href="/2021/01/26/hello-world/" class="timeline-item-title">Hello World</a>
-                </div>
-                <v-divider></v-divider>
-            </v-timeline-item>
-        
-    </v-timeline>
-</v-card>
+                
+                
+            </div>
+        </div>
+    </article>
+</div>
 
-         
-                            <div id="mobile-footer" class="d-block d-md-none">
-                                <v-divider></v-divider>
-                                <div id="mobile-footer-content">
-                                    <span>Theme: <a target="_blank" rel="noopener" href="https://github.com/kb1000fx/hexo-theme-insulin">Insulin</a> &nbsp; Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></span><br>
-                                    <span> &copy; 2020 - 2021 Tony Yuan</span>
-                                </div>
-                            </div>                   
-                        </v-col>                                            
-                    </v-row>
-                </v-container>
-            </v-content>
-        </v-app>
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner" style="text-align: left">
+        <p>
+            <a href="/about"  title="关于">关于</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/help" title="帮助" >帮助</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/links" title="友链">友链</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/sitemap.xml" title="地图">地图</a>
+        </p>
+        <p>
+            本站已建立&nbsp<a href="/timeline" id="siteBuildingTime"></a>&nbsp天，<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="licence">采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议创作</a><br/>
+            ©2017-<span id="cpYear"></span> 基于&nbsp<a href="http://hexo.io" target="_blank" rel="nofollow">Hexo</a>
+            ，主题采用&nbsp&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="bookmark">JSimple</a>
+            ，作者&nbsp<a href="https://about.tangkunyin.com" target="_blank" rel="friend">Coding</a>
+            ，Hosted by <a href="https://pages.github.com/" target="_blank" rel="nofollow">GitHub Pages</a>
+        </p>
     </div>
-    
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-<script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.30"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/js-base64@3.5.2/base64.min.js"></script>
+</footer>
+</div>
+<!-- search pop -->
+<div class="popup search-popup local-search-popup">
+    <div class="local-search-header clearfix">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+        <div class="local-search-input-wrapper">
+            <input id="local-search-input"
+                   spellcheck="false"
+                   type="text"
+                   autocomplete="off"
+                   placeholder="请输入查询关键词"/>
+        </div>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
 
-<script src="/js/main.js"></script>
-
-
-
-
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-
-
+    <script type="text/javascript">
+        let bp = document.createElement('script');
+        let curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        bp.setAttribute("async", "");
+        let s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    </script>
 
 
 </body>
