@@ -171,6 +171,18 @@
     
         <v-list id="sub-menu" class="font-weight-medium" dense>
             
+                
+                    <v-list-item href="/categories/PHP/" link>
+                        <v-badge :value="menuHover" transition="slide-y-transition" inline content="1" >
+                            <v-hover v-model="menuHover">
+                                <v-list-item-content>
+                                    <span>PHP</span>                              
+                                </v-list-item-content>                           
+                            </v-hover>
+                        </v-badge>
+                    </v-list-item>
+                
+            
         </v-list>    
     
 
@@ -273,6 +285,54 @@
 </v-row>
 
                             <v-card class="elevation-2 index-card">
+  
+    <article class="index-article">
+      
+      <div class="index-article-header">
+        <v-row no-gutters>
+          <v-col cols="auto">
+            <div class="index-article-header-date font-weight-medium">
+              2021-01-26
+            </div>
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col cols="auto">
+            
+              <v-card flat color="secondary" tile class="index-article-header-tag  font-weight-medium">
+                
+                  <span class="index-article-header-tag-content">
+                    <v-icon>fas fa-tag</v-icon>
+                    <a rel="tag" href = /tags/thinkphp-php/ >thinkphp,php</a>
+                  </span>
+                
+              </v-card>
+            
+          </v-col>
+        </v-row>
+        <span>
+          
+            <a class="index-article-header-category font-weight-bold" href="/categories/PHP/">PHP></a>
+           
+        </span> 
+        <a class="index-article-header-title font-weight-medium" href="/2021/01/26/ThinkPHP-6-%E5%A4%9A%E5%BA%94%E7%94%A8%E5%A4%9A%E5%85%A5%E5%8F%A3%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%94%9F%E6%88%90URL%E4%BD%BF%E7%94%A8-root-%E6%96%B9%E6%B3%95%E6%8C%87%E5%AE%9A%E5%85%A5%E5%8F%A3%E5%87%BA%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/">ThinkPHP 6 多应用多入口模式下生成URL使用-&gt;root()方法指定入口出错的问题</a>
+      </div>
+      
+      <div class="index-article-content">
+        
+          在TP6多应用多入口模式下如果使用相关方法生成url使用root()方法制定入口文件的时候生成的URL会出现错误。
+解决方案如下：
+修改vendor/topthink/think-multi-app/src/Url.php文件，找到build方法，在该方法的最后原本代码为
+1return $domain . rtrim($this-&gt;root, &#x27;/&#x27;) . &#x27;/&#x27; . ltrim($url, &#x27;/&#x27;);
+修改为：
+12345678//检测是否设定了rootif(!empty($this-&gt;root))&#123; ...
+        
+      </div>
+      
+      <div class="index-article-readmore ">
+        <v-btn text href="/2021/01/26/ThinkPHP-6-%E5%A4%9A%E5%BA%94%E7%94%A8%E5%A4%9A%E5%85%A5%E5%8F%A3%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%94%9F%E6%88%90URL%E4%BD%BF%E7%94%A8-root-%E6%96%B9%E6%B3%95%E6%8C%87%E5%AE%9A%E5%85%A5%E5%8F%A3%E5%87%BA%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/">Read More</v-btn>
+      </div>
+      <v-divider></v-divider>
+    </article> 
   
     <article class="index-article">
       
